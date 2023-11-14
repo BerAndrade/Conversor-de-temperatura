@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Conversor de Temperatura</title>
+ </head>
+<body>
+    <div  style=" border-radius: 15px;" class="converter">
+        <p >Esta aplicação tem como objetivo ajudar as pessoas a </p>
+        <p>converterem temperaturas de Celsius para Fahrenheit</p>
+        <br>
+        <h2>Conversor de Temperatura</h2>
+        <br>
+        <label for="celsius" style="color: rgb(255, 255, 255);">Celsius:</label> 
+        <input style=" border-radius: 15px;" type="text" id="celsius" placeholder="Temperatura em Celsius">
+        <br>
+        <br>
+        <label for="fahrenheit"  style="color: rgb(255, 255, 255);">Fahrenheit:</label>
+        <input style=" border-radius: 15px;"type="text" id="fahrenheit" placeholder="Temperatura em Fahrenheit">
+        <br>
+        <br>
+        <button onclick="converterfarenheit()" style="color: rgb(255, 255, 255);">Converter para Fahrenheit</button>
+        <button onclick="convertercelsius()" style="color: rgb(255, 255, 255);">Converter para Celsius</button>
+    </div>
+    <script>
+        function converterfarenheit() {
+            var celsius = parseFloat(document.getElementById('celsius').value);
+            if (!isNaN(celsius)) {
+                var fahrenheit = (celsius * 9/5) + 32;
+                document.getElementById('fahrenheit').value = fahrenheit.toFixed(2);
+            } else {
+                alert('Por favor, digite uma temperatura válida em Celsius.');
+            }
+        }
+        function convertercelsius() {
+            var fahrenheit = parseFloat(document.getElementById('fahrenheit').value);
+            if (!isNaN(fahrenheit)) {
+                var celsius = (fahrenheit - 32) * 5/9;
+                document.getElementById('celsius').value = celsius.toFixed(2);
+            } else {
+                alert('Por favor, digite uma temperatura válida em Fahrenheit.');
+            }
+        }
+    </script>
+</body>
+</html>

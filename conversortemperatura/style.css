@@ -1,0 +1,56 @@
+body {
+    background-image: url('pexels-george-dolgikh-1303098.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    color: white;
+    background-color: #ff9494;
+    margin: 0; 
+    height: 100vh; 
+}   
+.converter {
+    margin: 20px auto; 
+    padding: 20px;
+    background-color: #e21f1f; 
+    border: 2px solid #d70000;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+input {
+    width: 200px;
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+button {
+    padding: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: rgb(34,139,34);
+
+}
+h2{
+    color: rgb(255, 255, 255);
+}
+label{
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #d70000;
+    animation-duration: 0.5s;
+    color: white;
+}
+p{
+    font-family: cursive;
+}
+.divAlignCenter{
+    margin: 0 auto;
+ 
+    height: 300px;
+ }
